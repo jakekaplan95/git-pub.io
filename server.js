@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 
 //Drinks route
 app.get('/drinks', (req, res) =>{
-    res.render("drinks_index.ejs", drinks);
+    res.render("drinks_index.ejs", {drinks: drinks
+    });
 });
 
 
