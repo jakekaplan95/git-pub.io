@@ -24,11 +24,11 @@
       <%  } %>
 
 
-      <% for(let i = 0; i < drinks.length; i++) { %>
+      <% for(let i = 0; i < food.length; i++) { %>
 
             <li>
                 <a href="/food/<%= i %>">
-                <%= [i].name.charAt(0).toUpperCase() + food[i].name.slice(1);  %></a>
+                <%= food[i].name.charAt(0).toUpperCase() + food[i].name.slice(1);  %></a>
             </li>
       <%  } %>
 
